@@ -76,6 +76,8 @@
 
   <!-- Replace below stylesheet with your own stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/yaml/base.css">
 </head>
 <body>
 
@@ -110,12 +112,18 @@
 
     <div class="sg-colors sg-section">
       <h2 class="sg-h2"><a id="sg-colors" class="sg-anchor">Colors</a></h2>
-        <div class="sg-color sg-color--a"><span class="sg-color-swatch"><span class="sg-animated">#88ffda</span></span></div>
-        <div class="sg-color sg-color--b"><span class="sg-color-swatch"><span class="sg-animated">#4dd3c9</span></span></div>
-        <div class="sg-color sg-color--c"><span class="sg-color-swatch"><span class="sg-animated">#339db0</span></span></div>
-        <div class="sg-color sg-color--d"><span class="sg-color-swatch"><span class="sg-animated">#2078aa</span></span></div>
-        <div class="sg-color sg-color--e"><span class="sg-color-swatch"><span class="sg-animated">#3a517a</span></span></div>
-        <div class="sg-color sg-color--f"><span class="sg-color-swatch"><span class="sg-animated">#384355</span></span></div>
+        <div class="sg-color sg-color--a"><span class="sg-color-swatch"><span class="sg-animated">#fbab1b</span></span></div>
+        <div class="sg-color sg-color--b"><span class="sg-color-swatch"><span class="sg-animated">#f63</span></span></div>
+        <div class="sg-color sg-color--c"><span class="sg-color-swatch"><span class="sg-animated">#a50</span></span></div>
+        <div class="sg-color sg-color--d"><span class="sg-color-swatch"><span class="sg-animated">#90011f</span></span></div>
+        <div class="sg-color sg-color--e"><span class="sg-color-swatch"><span class="sg-animated">#a20000</span></span></div>
+        <div class="sg-color sg-color--f"><span class="sg-color-swatch"><span class="sg-animated">#069</span></span></div>
+        <div class="sg-color sg-color--g"><span class="sg-color-swatch"><span class="sg-animated">#71A3AD</span></span></div>
+        <div class="sg-color sg-color--h"><span class="sg-color-swatch"><span class="sg-animated">#669</span></span></div>
+        <div class="sg-color sg-color--i"><span class="sg-color-swatch"><span class="sg-animated">#663</span></span></div>
+        <div class="sg-color sg-color--j"><span class="sg-color-swatch"><span class="sg-animated">#393940</span></span></div>
+        <div class="sg-color sg-color--k"><span class="sg-color-swatch"><span class="sg-animated">#99999d</span></span></div>
+        <div class="sg-color sg-color--l"><span class="sg-color-swatch"><span class="sg-animated">#e2e3e5</span></span></div>
         <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
     </div><!--/.sg-colors-->
 

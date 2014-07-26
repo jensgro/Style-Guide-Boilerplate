@@ -1,116 +1,218 @@
- body {
-  font-family: "HelveticaNeue", "Helvetica", Arial, sans-serif;
-}
-
 /* -------------------------------------------------------------------------
  Colors
 ---------------------------------------------------------------------------- */
-.sg-color--a .sg-color-swatch {background: #88ffda;}
-
-.sg-color--b .sg-color-swatch {background: #4dd3c9;}
-
-.sg-color--c .sg-color-swatch {background: #339db0;}
-
-.sg-color--d .sg-color-swatch {background: #2078aa;}
-
-.sg-color--e .sg-color-swatch {background: #3a517a;}
-
-.sg-color--f .sg-color-swatch {background: #384355;}
-
-
+.sg-color--a .sg-color-swatch {background: #fbab1b;}
+.sg-color--b .sg-color-swatch {background: #f63;}
+.sg-color--c .sg-color-swatch {background: #a50;}
+.sg-color--d .sg-color-swatch {background: #90011f;}
+.sg-color--e .sg-color-swatch {background: #a20000;}
+.sg-color--f .sg-color-swatch {background: #069;}
+.sg-color--g .sg-color-swatch {background: #71A3AD;}
+.sg-color--h .sg-color-swatch {background: #669;}
+.sg-color--i .sg-color-swatch {background: #663;}
+.sg-color--j .sg-color-swatch {background: #393940;}
+.sg-color--k .sg-color-swatch {background: #99999d;}
+.sg-color--l .sg-color-swatch {background: #e2e3e5;}
 /* -------------------------------------------------------------------------
  Fonts
 ---------------------------------------------------------------------------- */
-.sg-font-primary {font-family: "HelveticaNeue", "Helvetica", Arial, sans-serif;}
-
+.sg-font-primary {font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;}
 .sg-font-secondary {font-family: Georgia, Times, "Times New Roman", serif;}
 
-
 /* -------------------------------------------------------------------------
- Alerts
+ Patterns
 ---------------------------------------------------------------------------- */
-/**
- * Alert styles. Your patterns/styles will vary. 
- * You should link your main stylesheet up with Style Guide Boilerplate for 
- * best results. When you update your site's styles, your style guide will
- * update as well.
- */
-.alert {
-  border: 1px solid #fbeed5;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-  margin-bottom: 20px;
-  padding: 8px 35px 8px 14px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+
+/* ============ Breadcrumb =============== */
+.ym-nav {
+  border-top: 3px solid #fff;
+  background-color: #d7d7d7;
+  max-width: 1600px;
+  margin: 0 auto;
+  box-shadow: 0 12px 15px rgba(0, 0, 0, 0.25);
+  padding-bottom: 3px;
+  position: relative;
+  z-index: 10;
+}
+.ym-breadcrumb {
+  list-style-type: none;
 }
 
-.alert-warning {
-  background-color: #fcf8e3;
-  border-color: #fbeed5;
-  color: #c09853;
+.ym-breadcrumb, .ym-breadcrumb li {
+  margin-left: 0;
+  padding-left: 0;
 }
 
-.alert-error {
-  background-color: #f2dede;
-  border-color: #eed3d7;
-  color: #b94a48;
+.ym-breadcrumb {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.alert-success {
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
-  color: #468847;
+.ym-breadcrumb > li {
+  float: left;
+  margin-left: 0;
+  position: relative;
 }
 
-.alert-info {
-  background-color: #d9edf7;
-  border-color: #bce8f1;
-  color: #3a87ad;
-}
-
-
-
-/* -------------------------------------------------------------------------
- Breadcrumbs
----------------------------------------------------------------------------- */
-/**
- * Breadcrumb styles for first pattern. Your patterns/styles will vary. 
- * You should link your main stylesheet up with Style Guide Boilerplate for 
- * best results. When you update your site's styles, your style guide will
- * update as well.
- */
-.breadcrumb {
-   background-color: #eee;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-  list-style: none;
-  margin: 0 0 20px;
-  padding: 8px 15px;
-}
-
-.breadcrumb li {
-  display: inline-block;
-  *display: inline;
-  text-shadow: 0 1px 0 #fff;
-  *zoom: 1;
-}
-
-.breadcrumb li a {
-  color: #007f96;
+.ym-breadcrumb > li > a, .ym-breadcrumb > li strong {
+  display: block;
+  overflow: hidden;
   text-decoration: none;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  padding-right: 3.75rem;
 }
 
-.breadcrumb li a:hover {
-  color: #004068;
+.ym-breadcrumb > li > a:after, .ym-breadcrumb > li strong:after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: 0;
+  overflow: hidden;
+  width: 50px;
+  height: 100px;
 }
 
-.breadcrumb li .divider {  
-  color: #aaa;
-  padding: 0 5px;
+.ym-breadcrumb > li:first-child a {
+  border-radius: 4px 0 0 4px;
 }
 
-.breadcrumb .active {
-  color: #555;
+.ym-breadcrumb > li:first-child a:before, .ym-breadcrumb > li:first-child a:after {
+  border: none;
 }
+
+.ym-breadcrumb > li:last-child a, .ym-breadcrumb > li:last-child strong {
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.ym-breadcrumb > li:last-child a:after, .ym-breadcrumb > li:last-child strong:after {
+  border: none;
+}
+
+.ym-breadcrumb > li strong {
+  font-weight: normal;
+  cursor: default;
+}
+
+
+.ym-breadcrumb a {
+  color: inherit;
+}
+
+.ym-breadcrumb a:hover, .ym-breadcrumb a:focus {
+  background-color: #90011f;
+}
+
+.ym-breadcrumb a:hover span, .ym-breadcrumb a:focus span {
+  color: #fff;
+}
+
+.ym-breadcrumb a:active {
+  background-color: #5d0114;
+}
+
+
+.ym-breadcrumb .homelnk {
+  background-color: #fff;
+  padding-left: 0;
+}
+
+.ym-breadcrumb .homelnk:hover, .ym-breadcrumb .homelnk:hover a, .ym-breadcrumb .homelnk:focus, .ym-breadcrumb .homelnk:focus a {
+  color: #fff;
+  background-color: #90011f;
+}
+
+.ym-breadcrumb .homelnk:active, .ym-breadcrumb .homelnk:active a {
+  color: #fff;
+  background-color: #5d0114;
+}
+
+.ym-breadcrumb .homelnk a {
+  color: #6e6e74;
+  background: white url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAATBAMAAABmV+C7AAAAA3NCSVQICAjb4U/gAAAAJ1BMVEX///+ZmZ2ZmZ2ZmZ2ZmZ2ZmZ2ZmZ2ZmZ2ZmZ2ZmZ2ZmZ2ZmZ2ZmZ3lFX8tAAAADXRSTlMAESIzRGZ3iJm7zO7/CjiH4AAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNAay06AAAAAYdEVYdENyZWF0aW9uIFRpbWUAMjcuMDUuMjAxNJY5LrsAAABISURBVAiZY2BgYGApYIADawSbaQ+CLXUGzmZcg2BznDkzvRwMGBh6zsAAA9sZBDsGiX0GhziyemRzUMxHthfZPSjuRHY/3F8AsWpN8x2tXi8AAAAASUVORK5CYII=') no-repeat 15px center;
+  padding-left: 3.125rem;
+  padding-right: 1.875rem;
+}
+
+.homelnk a span, .homelnk strong {
+  color: #6e6e74;
+}
+
+.homelnk a {
+  color: transparent;
+}
+
+.homelnk a, .homelnk strong {
+  background-color: white;
+}
+
+
+.mainlnk a span, .mainlnk strong {
+  color: white;
+}
+
+.mainlnk > a {
+  background-position: 35px center;
+  background-repeat: no-repeat;
+  padding: 0rem 1.25rem;
+  color: transparent;
+}
+
+.mainlnk a, .mainlnk strong {
+  background-color: #6e6e74;
+}
+
+.sublnk a span, .sublnk strong {
+  color: white;
+}
+
+.sublnk a {
+  color: transparent;
+  padding-left: 1.25rem;
+}
+
+.sublnk a, .sublnk strong {
+  background-color: #99999d;
+}
+
+.mainlnk {
+  z-index: 90;
+}
+
+.sublnk {
+  z-index: 80;
+}
+
+
+.mainlnk a:after {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABkBAMAAAA2xn5oAAAAA3NCSVQICAjb4U/gAAAAD1BMVEWZmZ2Wlpp+foN2dnxubnQTnM6bAAAACXBIWXMAAAsSAAALEgHS3X78AAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M0BrLToAAAABh0RVh0Q3JlYXRpb24gVGltZQAxOS4wNi4yMDE0M1g8hAAAANlJREFUSIl10tltxDAQRMEOwSEwBafA7fxj8l6SDJHF34cCBsPJb/QePyolKlGJSlSiEpWoRCUqUYlKVKISlahEJSpRiUpUohKVqEQlKlGJSlSiEpXoXi50LxdayomWcqK1HGgtB9qUL9qUL9qVD9qVD9qWN9qWN9qXF9qXF0J5IpQnUnmwTJahMjnbUJncwVCZ3PVQmfzToTJ5O0Nl8kaHykHWMlROspShcpF7GSr/SEhCEpKQhCQkIQlJSEISkpCEJCQhCUlIQhKSkIQkJCEJSUhCEpKQhOQPp1JVNoqWMg8AAAAASUVORK5CYII=') no-repeat 0 0;
+}
+
+.mainlnk a:hover:after, .mainlnk a:focus:after {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABkBAMAAAA2xn5oAAAAA3NCSVQICAjb4U/gAAAAD1BMVEWZmZ2Yj5WTOk6SHTaQAR8FuN5VAAAACXBIWXMAAAsSAAALEgHS3X78AAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M0BrLToAAAABh0RVh0Q3JlYXRpb24gVGltZQAxOS4wNi4yMDE0M1g8hAAAANlJREFUSIl10tltxDAQRMEOwSEwBafA7fxj8l6SDJHF34cCBsPJb/QePyolKlGJSlSiEpWoRCUqUYlKVKISlahEJSpRiUpUohKVqEQlKlGJSlSiEpXoXi50LxdayomWcqK1HGgtB9qUL9qUL9qVD9qVD9qWN9qWN9qXF9qXF0J5IpQnUnmwTJahMjnbUJncwVCZ3PVQmfzToTJ5O0Nl8kaHykHWMlROspShcpF7GSr/SEhCEpKQhCQkIQlJSEISkpCEJCQhCUlIQhKSkIQkJCEJSUhCEpKQhOQPp1JVNoqWMg8AAAAASUVORK5CYII=') no-repeat 0 0;
+}
+
+.mainlnk a:active:after {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABkBAMAAAA2xn5oAAAAA3NCSVQICAjb4U/gAAAAD1BMVEWZmZ2Vj5RzOkdoHS1dARTmz0bHAAAACXBIWXMAAAsSAAALEgHS3X78AAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M0BrLToAAAABh0RVh0Q3JlYXRpb24gVGltZQAxOS4wNi4yMDE0M1g8hAAAANlJREFUSIl10tltxDAQRMEOwSEwBafA7fxj8l6SDJHF34cCBsPJb/QePyolKlGJSlSiEpWoRCUqUYlKVKISlahEJSpRiUpUohKVqEQlKlGJSlSiEpXoXi50LxdayomWcqK1HGgtB9qUL9qUL9qVD9qVD9qWN9qWN9qXF9qXF0J5IpQnUnmwTJahMjnbUJncwVCZ3PVQmfzToTJ5O0Nl8kaHykHWMlROspShcpF7GSr/SEhCEpKQhCQkIQlJSEISkpCEJCQhCUlIQhKSkIQkJCEJSUhCEpKQhOQPp1JVNoqWMg8AAAAASUVORK5CYII=') no-repeat 0 0;
+}
+
+
+.sublnk a:after {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABkBAMAAAA2xn5oAAAAA3NCSVQICAjb4U/gAAAAD1BMVEXX19fT09OwsLOkpKiZmZ3Ui37lAAAACXBIWXMAAAsSAAALEgHS3X78AAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M0BrLToAAAABh0RVh0Q3JlYXRpb24gVGltZQAxOS4wNi4yMDE0M1g8hAAAANlJREFUSIl10tltxDAQRMEOwSEwBafA7fxj8l6SDJHF34cCBsPJb/QePyolKlGJSlSiEpWoRCUqUYlKVKISlahEJSpRiUpUohKVqEQlKlGJSlSiEpXoXi50LxdayomWcqK1HGgtB9qUL9qUL9qVD9qVD9qWN9qWN9qXF9qXF0J5IpQnUnmwTJahMjnbUJncwVCZ3PVQmfzToTJ5O0Nl8kaHykHWMlROspShcpF7GSr/SEhCEpKQhCQkIQlJSEISkpCEJCQhCUlIQhKSkIQkJCEJSUhCEpKQhOQPp1JVNoqWMg8AAAAASUVORK5CYII=') no-repeat 0 0;
+}
+
+.sublnk a:hover:after, .sublnk a:focus:after {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABkBAMAAAA2xn5oAAAAA3NCSVQICAjb4U/gAAAAD1BMVEXX19fTysuqUWSdKEGQAR9kUkm5AAAACXBIWXMAAAsSAAALEgHS3X78AAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M0BrLToAAAABh0RVh0Q3JlYXRpb24gVGltZQAxOS4wNi4yMDE0M1g8hAAAANlJREFUSIl10tltxDAQRMEOwSEwBafA7fxj8l6SDJHF34cCBsPJb/QePyolKlGJSlSiEpWoRCUqUYlKVKISlahEJSpRiUpUohKVqEQlKlGJSlSiEpXoXi50LxdayomWcqK1HGgtB9qUL9qUL9qVD9qVD9qWN9qWN9qXF9qXF0J5IpQnUnmwTJahMjnbUJncwVCZ3PVQmfzToTJ5O0Nl8kaHykHWMlROspShcpF7GSr/SEhCEpKQhCQkIQlJSEISkpCEJCQhCUlIQhKSkIQkJCEJSUhCEpKQhOQPp1JVNoqWMg8AAAAASUVORK5CYII=') no-repeat 0 0;
+}
+
+.sublnk a:active:after {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABkBAMAAAA2xn5oAAAAA3NCSVQICAjb4U/gAAAAD1BMVEXX19fPysuKUV1zKDhdARTmlsKZAAAACXBIWXMAAAsSAAALEgHS3X78AAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M0BrLToAAAABh0RVh0Q3JlYXRpb24gVGltZQAxOS4wNi4yMDE0M1g8hAAAANlJREFUSIl10tltxDAQRMEOwSEwBafA7fxj8l6SDJHF34cCBsPJb/QePyolKlGJSlSiEpWoRCUqUYlKVKISlahEJSpRiUpUohKVqEQlKlGJSlSiEpXoXi50LxdayomWcqK1HGgtB9qUL9qUL9qVD9qVD9qWN9qWN9qXF9qXF0J5IpQnUnmwTJahMjnbUJncwVCZ3PVQmfzToTJ5O0Nl8kaHykHWMlROspShcpF7GSr/SEhCEpKQhCQkIQlJSEISkpCEJCQhCUlIQhKSkIQkJCEJSUhCEpKQhOQPp1JVNoqWMg8AAAAASUVORK5CYII=') no-repeat 0 0;
+}
+
+
+/* ============ xxxxx =============== */
+
+/* ============ xxxxx =============== */
